@@ -5,18 +5,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/webfont.css"/>
         <link rel="stylesheet" type="text/css" href="css/core.css"/>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
     </head>
     <body>
-        <div id="slide-1" class="slide">
+        <div id="slide-1" class="slide" data-scroll-index="0">
             <div class="logo-container">
                 <img id="gl-logo" src="img/logo/gl-logo256.png">
                 <h1 id="gl-logo-text">Git Lucky</h1>
-                <p id="gl-tagline">Insert tagline here.</p>
+                <p id="gl-tagline"></p>
             </div>
-            <a class="icon-down" href="#" alt="Slide Down"><img src="img/icons/down_arrow.png"/></a>
+            <a class="icon-down" href="#" alt="Slide Down" data-scroll-goto="1"><img src="img/icons/down_arrow.png"/></a>
         </div>
-        <div class="slide">
+        <div class="slide" data-scroll-index="1">
             <div id="main-nav">
                 <div class="col-12">
                     <img id="nav-logo" src="img/logo/gl-logo-white48.png">
@@ -25,9 +25,36 @@
             </div>
             <div class="col-12">
                 <h2 class="slide-title">ABOUT US</h2>
-                <p>
-                    insert text here.
-                </p>
+                <div class="about-container">
+                	<div class="col-4">
+	                	<div class="profile">
+		                	<img class="about-logo" src="img/icons/brain.png">
+		                	<h3>Creative ideas</h3>
+		                	<p class="description">
+		                		Strategic thinking that <b>challenges</b> conventions
+		                	</p>
+	                	</div>
+                	</div>
+                	<div class="col-4">
+                		<div class="profile">
+                			<img class="about-logo" src="img/icons/creative.png">
+                			<h3>Inspiring content</h3>
+                			<p class="description">
+                				Creative storytelling that <b>inspires, engages and influences</b>
+                			</p>
+	                	</div>
+                	</div>
+                		<div class="col-4">
+                		<div class="profile">
+                			<img class="about-logo" src="img/icons/code.png">
+                			<h3>Client communication</h3>
+                			<p class="description">
+                				We bring your <b>visions to life</b>
+                			</p>
+	                	</div>
+                	</div>
+                	
+                </div>
             </div>
             <div class="team-facts">
                 <div class="col-12">
@@ -64,6 +91,7 @@
                     <img class="vendor-logo" src="img/vendor-logo/sqlserver.png">
                     <img class="vendor-logo" src="img/vendor-logo/vs2012.png">
                     <img class="vendor-logo" src="img/vendor-logo/github.png">
+                    <img class="vendor-logo" src="img/vendor-logo/ps.png">
                 </div>
             </div>
         </div>
@@ -140,27 +168,25 @@
                     <div class="profile">
                         <img class="dp" src="img/dp/adrian.jpg">
                         <h3>Adrian Enriquez</h3>
-                        <p class="description">Gwapo</p>
+                        <p class="description">Creative developer who knows that design is not just about how it looks. It is also about how it works.</p>
                         <div class="info-container">
                             <div class="website-logo-container">
                                 <img src="img/logo/ae-logo.png"/>
                             </div>
                             <div class="website-info-container">
                                 <p class="website">
-                                    <span class="glyphicon glyphicon-globe"></span> 
                                     www.adrianenriquez.com
                                 </p>
-                                <p class="email" >
-                                    <span class="glyphicon glyphicon-envelope"></span> 
+                                <p class="email">
                                     me@adrianenriquez.com
                                 </p>
                             </div>
                         </div>
                         <div class="social-container">
                             <ul>
-                                <li><a href="#" class="social-icon twitter"><img src="img/icons/twitter.png"></a></li>
+                                <li><a href="https://github.com/eydreeyawn" class="social-icon git"><img src="img/icons/git.png"></a></li>
                                 <li><a href="http://stackoverflow.com/users/3126509/adrian-enriquez" class="social-icon so"><img src="img/icons/so.png"></a></li>
-                                <li><a href="#" class="social-icon git"><img src="img/icons/git.png"></a></li>
+                                <li><a href="http://twitter.com/eydreeyawn" class="social-icon twitter"><img src="img/icons/twitter.png"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -169,7 +195,8 @@
                     <div class="profile">
                         <img class="dp" src="img/dp/jelly.jpg">
                         <h3>Jelly De Ocampo</h3>
-                        <p class="description">Maganda daw sya.</p>
+                        <p class="description">Web Developer by day. Bookworm and frustrated writer by night.
+							Refining web one pixel at a time.</p>
                         <div class="info-container">
                             <div class="website-logo-container">
                                 <img src="img/logo/jdo.png"/>
@@ -187,14 +214,26 @@
                         </div>
                         <div class="social-container">
                             <ul>
-                                <li><a href="#" class="social-icon twitter"><img src="img/icons/twitter.png"></a></li>
-                                <li><a href="http://stackoverflow.com/users/3126509/adrian-enriquez" class="social-icon so"><img src="img/icons/so.png"></a></li>
-                                <li><a href="#" class="social-icon git"><img src="img/icons/git.png"></a></li>
+                                <li><a href="http://twitter.com/jellyfication" class="social-icon twitter"><img src="img/icons/twitter.png"></a></li>
+                                <li><a href="http://stackoverflow.com/users/3003157/jellyfication" class="social-icon so"><img src="img/icons/so.png"></a></li>
+                                <li><a href="https://github.com/jdeocampo" class="social-icon git"><img src="img/icons/git.png"></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="footer-container">
+                <div class="footer col-12 ">
+                    Copyright &copy; 2014 GitLucky | Luck is probability taken personally.
+                </div>
+            </div>
         </div>
+        <script src="js/jquery.js"></script>
+		<script src="js/scrollIt.js"></script>
+		<script>
+			$(function(){
+				  $.scrollIt();
+				});
+		</script>
     </body>
 </html>

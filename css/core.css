@@ -14,7 +14,10 @@ body{
 
 }
 p,a{
-    font-size:16px;
+    font-size:18px;
+}
+a:visited{
+    color:#333;
 }
 .slide{
     width:100%;
@@ -48,7 +51,7 @@ ul li{
     display:inline-block;
     font-size:52px;
     left:25%;
-    margin:40px 0;
+    margin:60px 0;
     position:relative;
     text-align: center;
     width:50%;
@@ -68,6 +71,10 @@ ul li{
     width:50%;
     float:left;
 }
+.col-4{
+    width:33.33%;
+    float:left;
+}
 p{
     margin:0;
 }
@@ -77,7 +84,8 @@ p{
 
 
 #slide-1{
-    background:url('../img/bg/gitlucky-bg.jpg') no-repeat 50% 50% fixed;
+    background:#ff5146;
+    background:url('../img/bg/gl-bg.jpg') no-repeat 50% 50% fixed;
     background-size:cover;
 }
 .logo-container{
@@ -118,36 +126,50 @@ p{
 
 
 /* About Us */ 
-
+.about-us-desc{
+    font-size:34px;
+    font-weight: normal;
+    text-align:justify;
+    margin:20px 0;
+}
 .team-facts{
     background:#ff5146;
     background:url('../img/bg/gitlucky-bg.jpg') no-repeat 50% 50% fixed;
+    background-size:cover;
     padding:50px 0;
+    margin-top:30px;
 }
 .fact-container{
     width:220px;
     height:220px;
     border: 10px solid rgba(255,255,255,0.5);
-    border-radius:110px;
-    margin:20px;
+    border-radius:120px;
+    margin:20px 120px 20px 0px;
     color:#fff;
     float:left;
+}
+.fact-container:last-of-type{
+    margin-right:0;
 }
 .fact-num,.fact-text{
     text-align:center;
 }
 .fact-num{
     font-size:70px;
-    margin: 25px 0 0 0;
+    margin: 40px 0 0 0;
     font-weight: bold;
 }
-
+.about-logo{
+    width:206px;
+    float:left;
+    margin:25px 48px;
+}
 
 /* Slide 2 */
 
 
 #slide-2{
-    background:#e6e6e6;
+    background:#f6f6f6;
 }
 
 #main-nav{
@@ -164,7 +186,7 @@ p{
 }
 #nav-logo-text{
     float:left;
-    margin:22px 10px 10px 12px;
+    margin:27px 10px 10px 12px;
     font-size:36px;
     color:#fff;
 }
@@ -173,6 +195,11 @@ p{
     text-align:center;
     margin:auto;
     width:90%;
+    font-size:20px;
+}
+.profile h3{
+    font-size:24px;
+    font-weight: bold;
 }
 .info-container{
     border:1px solid #ccc;
@@ -181,12 +208,13 @@ p{
     background:#f6f6f6;
 }
 .dp{
-    border-radius:96px;
-    border:5px solid #fff;
+    border-radius:100px;
+    border:7px solid #fff;
     width:192px;
 }
 .website-logo-container, .website-info-container{
     float:left;
+    box-sizing:border-box;
 }
 .website-logo-container{
     width:30%;
@@ -197,18 +225,17 @@ p{
 }
 .website-info-container{
     width:70%;
+    float:left;
 }
 .website,.email{
     padding:10px;
 }
-.website span,.email span{
-    padding-right:5px;
-}
 .website{
     border-bottom:1px solid #ccc;
+    height:23px;
 }
 .social-container{
-    margin-top:10px;
+    margin-top:20px;
     width:100%;
     overflow:hidden;
 }
@@ -233,17 +260,21 @@ p{
 
 /*Slide 3 */
 
-
+#slide-3{ background:#f6f6f6;}
 .vendor-logo-container{
+    margin:40px 0;
 
 }
 .vendor-logo{
     width:96px;
     float:left;
-    margin:20px;
+    margin:25px 48px;
 }
 
 /* Slide 4 - Works */
+#slide-4{
+    background:#e6e6e6;
+}
 .works-nav{
     overflow:hidden;   
 }
@@ -262,6 +293,7 @@ p{
 .works-container{
     overflow:hidden;
     clear:left;
+    margin-bottom:40px;
 }
 
 .thumb{
@@ -283,10 +315,17 @@ p{
     margin-right:0;
 }
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
-    .thumb{
+    .works-container{
         width:100%;
-        display:block;
-        margin-bottom: 5%;
+        margin:auto;
+    }
+    .thumb{
+        width:40%;
+        margin:5%;
+        float:left;
+    }
+    .thumb:nth-child(3n+0){
+        margin:5%   ;
     }
 }
 .thumb .details{
@@ -299,6 +338,13 @@ p{
     background:rgba(255,255,255,0.95);
     padding-top:20%;
     -webkit-transition: 0.5s all ease;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    border:1px solid #e0e0e0;;
 }
 .thumb .thumb-title{
 
@@ -332,4 +378,52 @@ p{
     max-width:128px;
     border:none;
     width:50%;
+}
+
+/* Footer */
+
+.footer-container{
+    background:#333;
+    padding:20px 0;
+    width:100%;
+    margin-top:50px;
+}
+.footer{
+    color:#aaa;
+}
+
+/* Navigation */
+#slideNav {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -80px;
+    z-index: 11;
+}
+#slideNav ul {
+    list-style: none;
+    color: #000000;
+    font-size: 13px;
+    text-align: center;
+}
+#slideNav li {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255,255,255,0.70);
+    margin-bottom: 1px;
+}
+.no-rgba  #slideNav li {background-color: #ffffff}
+#slideNav a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000000;
+}
+#slideNav a.disabled {
+    cursor: default;
 }
